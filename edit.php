@@ -3,7 +3,7 @@
 ?>
   <div class="container">
     <?php include_once("templates/backbtn.html"); ?>
-    <h1 id="main-title">Editar contato</h1>
+    <h1 id="main-title">Editar endereço para entrega</h1>
     <form id="create-form" action="<?= $BASE_URL ?>config/process.php" method="POST">
       <input type="hidden" name="type" value="edit">
       <input type="hidden" name="id" value="<?= $contact['id'] ?>">
@@ -13,7 +13,7 @@
       </div>
       <div class="form-group">
         <label for="phone">Telefone do contato:</label>
-        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" value="<?= $contact['phone'] ?>" required>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o endereço" value="<?= $contact['phone'] ?>" required>
       </div>
       <div class="form-group">
         <label for="observations">Observações:</label>
